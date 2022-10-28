@@ -1,0 +1,148 @@
+html,body {
+  height: 100%;
+}
+
+body{
+  padding-top: 5rem
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.bg-odd{
+  background-color: #e0e0e0;
+}
+
+.bg-even{
+  background-color: #bfbdbd;
+}
+
+.subjectButton {
+  box-shadow:inset 0px 1px 3px 0px #3b3b3b;
+  background:linear-gradient(to bottom, #171c1b 5%, #666666 100%);
+  background-color:#171c1b;
+  border-radius:5px;
+  border:1px solid #080808;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:15px;
+  font-weight:bold;
+  padding:11px 23px;
+  text-decoration:none;
+  text-shadow:0px -1px 0px #2b665e;
+}
+.subjectButton:hover {
+  background:linear-gradient(to bottom, #666666 5%, #171c1b 100%);
+  background-color:#666666;
+}
+.subjectButton:active {
+  position:relative;
+  top:1px;
+}
+
+
+.lightGrey{
+  background-color: #CCCCCC;
+}
+
+.mediumGrey{
+  background-color: #999999;
+}
+
+
+.chatBoxTeacher {
+  background-color: #ffffff;
+  color:#000000
+}
+
+
+.chatBoxLeft {
+  margin-left: 1rem;
+  width: 300px;
+  border-radius: 15px;
+  background: #000000;
+  color: #ffffff;
+  padding: 0px 0px 0px 15px;
+  text-align: left;
+  font-family: arial;
+  position: relative;
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+}
+
+.chatBoxRight {
+  margin-left: 20rem;
+  width: 300px;
+  border-radius: 15px;
+  background: #000000;
+  color: #ffffff;
+  padding: 0px 0px 0px 15px;
+  text-align: left;
+  font-family: arial;
+  position: relative;
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+}
+
+.beforeRight:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 15px solid #000000;
+  border-right: 15px solid transparent;
+  border-top: 15px solid #000000;
+  border-bottom: 15px solid transparent;
+  right: -16px;
+  top: 0px;
+}
+
+.beforeLeft:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 15px solid transparent;
+  border-right: 15px solid #000000;
+  border-top: 15px solid #000000;
+  border-bottom: 15px solid transparent;
+  left: -16px;
+  top: 0px;
+}
